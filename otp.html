@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body>
+    <div class="h-screen flex justify-center border border-black overflow-auto">
+        <div class="p-6 w-full max-w-lg p">
+            <div class="flex justify-center pt-5">
+                <img src="Logo.png" class="w-28 border border-yellow-500 rounded p-2" alt="">
+            </div>
+            <form action="" class="flex flex-col">
+                <div class="flex justify-center">
+                    <div class="py-8 font-bold">
+                        <h1>One-Time Password</h1>
+                        <div class="flex">
+                            <select id="countries" class="border-2 border-black mr-2 bg-gray-200 px-1 rounded mt-2">
+                                <option selected>+62</option>
+                            </select>
+                            <input type="number" class="focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 mr-1 w-36" >
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <input type="text" placeholder="0" class="text-2xl text-center w-8 focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 mr-1">
+                    <input type="text" placeholder="9" class="text-2xl text-center w-8 focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 mr-1">
+                    <input type="text" placeholder="1" class="text-2xl text-center w-8 focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 mr-1">
+                    <input type="text" placeholder="2" class="text-2xl text-center w-8 focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 mr-1">
+                    <input type="text" placeholder="9" class="text-2xl text-center w-8 focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 mr-1">
+                    <input type="text" placeholder="7" class="text-2xl text-center w-8 focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 mr-1">
+                </div>
+                <div class="flex justify-center pt-8 mb-10">
+                    <a href="login.html" class="px-7 py-1 bg-gray-800 text-white border-2 text-yellow-500 border-yellow-500 hover:bg-yellow-500 font-semibold rounded">CONFIRM</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
