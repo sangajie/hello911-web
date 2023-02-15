@@ -14,13 +14,13 @@
             <div class="flex justify-center pt-5">
                 <img src="Logo.png" class="w-28 border border-yellow-500 rounded p-2" alt="">
             </div>
-            <form action="" class="flex flex-col">
+            <form onsubmit="return check()" class="flex flex-col">
                 <h1 class="py-8">Welcome!</h1>
-                <input type="text" placeholder="Username" class="focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1">
-                <input type="text" placeholder="Password" class="focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 pt-4">
+                <input type="text" placeholder="Username" class="focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1" required>
+                <input type="text" placeholder="Password" class="focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 pt-4" required>
 
                 <div class="flex justify-center pt-8">
-                    <a href="home.html" class="px-7 py-1 bg-gray-800 text-white border-2 text-yellow-500 border-yellow-500 hover:bg-yellow-500 font-semibold rounded">LOGIN</a>
+                    <button type="submit"  class="px-7 py-1 hover:border-gray-800 bg-gray-800 hover:text-gray-800 border-2 text-yellow-500 border-yellow-500 hover:bg-yellow-500 font-semibold rounded">LOGIN</button>
                 </div>
                 <div class="flex flex-col items-center text-xs mt-8">
                     <p>Did not have account yet?</p>
@@ -30,4 +30,38 @@
         </div>
     </div>
 </body>
+<script>
+    function check () {
+  alert("hello")
+        // (C1) INIT
+//   var valid = true, error = "", field = "";
+
+//   // (C2) NAME
+//   field = document.getElementById("fname");
+//   error = document.getElementById("cname");
+//   if (!field.checkValidity()) {
+//     valid = false;
+//     field.classList.add("err");
+//     error.innerHTML = "Name must be 2-4 characters\r\n";
+//   } else {
+//     field.classList.remove("err");
+//     error.innerHTML = "";
+//   }
+
+//   // (C3) NUMBER
+//   field = document.getElementById("fnumber");
+//   error = document.getElementById("cnumber");
+//   if (!field.checkValidity()) {
+//     valid = false;
+//     field.classList.add("err");
+//     error.innerHTML = "Num must be between 1-12\r\n";
+//   } else {
+//     field.classList.remove("err");
+//     error.innerHTML = "";
+//   }
+
+//   // (C4) RESULT
+//   return valid;
+}
+</script>
 </html>
