@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @media(min-height:800px){
+            .menu{
+                position: fixed;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="h-screen flex justify-center">
+        <div class="w-full max-w-lg">
+            <div class="bg-black text-white text-center p-1 rounded">
+                <h1 class="font-bold text-xl">EMERGENCY CALL 911</h1>
+            </div>
+            <div class="relative h-full">
+                <div class="flex h-2/3 relative">
+                    <div id="map" class="w-full h-full z-20"></div>
+                </div>
+                <div class="flex justify-center absolute bottom-1/4 w-full">
+                    <a href="home.html" class="font-extrabold bg-zinc-700 border-8 border-yellow-500 hover:bg-yellow-500 hover:border-zinc-700 text-2xl rounded-full text-white p-16  z-30">SOS</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAABmoMpZAsovULjciIgvq9Qj8z33YeR24&callback=initMap&v=weekly"
+    defer
+    ></script>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            const uluru = { lat: -6.242435126275034, lng: 107.04481472328577 };
+            // -6.242435126275034, 107.04481472328577
+            // The map, centered at Uluru
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: uluru,
+            });
+            // The marker, positioned at Uluru
+            const marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+            });
+        }
+        
+        window.initMap = initMap;
+    </script>
+</body>
+</html>
