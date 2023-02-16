@@ -14,7 +14,7 @@
             <div class="flex justify-center pt-5">
                 <img src="Logo.png" class="w-28 border border-yellow-500 rounded p-2" alt="">
             </div>
-            <form action="#" class="flex flex-col">
+            <form onsubmit="return check()" class="flex flex-col">
                 <div class="flex justify-center">
                     <div class="py-8 font-bold">
                         <h1>One-Time Password</h1>
@@ -27,21 +27,40 @@
                     </div>
                 </div>
                 <div class="flex justify-center">
-                    <input type="text" placeholder="0" class="text-2xl text-center w-8 focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 mr-1">
-                    <input type="text" placeholder="9" class="text-2xl text-center w-8 focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 mr-1">
-                    <input type="text" placeholder="1" class="text-2xl text-center w-8 focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 mr-1">
-                    <input type="text" placeholder="2" class="text-2xl text-center w-8 focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 mr-1">
-                    <input type="text" placeholder="9" class="text-2xl text-center w-8 focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 mr-1">
-                    <input type="text" placeholder="7" class="text-2xl text-center w-8 focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 mr-1">
+                    <input type="text" id="nomer0" placeholder="0" class="text-2xl text-center w-8 focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 mr-1">
+                    <input type="text" id="nomer9" placeholder="9" class="text-2xl text-center w-8 focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 mr-1">
+                    <input type="text" id="nomer1" placeholder="1" class="text-2xl text-center w-8 focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 mr-1">
+                    <input type="text" id="nomer2" placeholder="2" class="text-2xl text-center w-8 focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 mr-1">
+                    <input type="text" id="nomer9" placeholder="9" class="text-2xl text-center w-8 focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 mr-1">
+                    <input type="text" id="nomer7" placeholder="7" class="text-2xl text-center w-8 focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 mr-1">
                 </div>
                 <div class="flex justify-center pt-8 mb-10">
-                    <a href="login.html" class="px-7 py-1 hover:border-gray-800 bg-gray-800 hover:text-gray-800 border-2 text-yellow-500 border-yellow-500 hover:bg-yellow-500 font-semibold rounded">CONFIRM</a>
+                    <button class="px-7 py-1 hover:border-gray-800 bg-gray-800 hover:text-gray-800 border-2 text-yellow-500 border-yellow-500 hover:bg-yellow-500 font-semibold rounded">CONFIRM</button>
+                    
                 </div>
             </form>
         </div>
     </div>
 </body>
 <script>
-    
+    function myFunction() {
+  location.replace("https://www.w3schools.com")
+}
+    function check () {
+        var nomer0 =  document.getElementById("nomer0").value;
+        var nomer9 =  document.getElementById("nomer9").value;
+        var nomer1 =  document.getElementById("nomer1").value;
+        var nomer2 =  document.getElementById("nomer2").value;
+        var nomer9 =  document.getElementById("nomer9").value;
+        var nomer7 =  document.getElementById("nomer7").value;
+        if(nomer0 == "0" && nomer9 == "9" && nomer1 == "1" && nomer2 == "2" && nomer9 == "9" && nomer7 == "7") {
+            // window.location = "http://127.0.0.1:5500/hello911-web/login.html";
+            // alert("sa")
+            window.open("http://127.0.0.1:5500/hello911-web/login.html"); 
+            
+        } else {
+            alert("salah")
+        }
+    }
 </script>
 </html>
