@@ -17,7 +17,7 @@
             <form onsubmit="return check()" class="flex flex-col pt-10">
                 <h1 class="py-8 font-bold">Welcome!</h1>
                 <input type="text" id="username" placeholder="Username" class="focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1" required>
-                <input type="text" id="password" placeholder="Password" class="focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 pt-4" required>
+                <input type="password" id="password" placeholder="Password" class="focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 pt-4" required>
 
                 <div class="flex justify-center pt-8">
                     <button type="submit"  class="px-7 py-1 hover:border-gray-800 bg-gray-800 hover:text-gray-800 border-2 text-yellow-500 border-yellow-500 hover:bg-yellow-500 font-semibold rounded">LOGIN</button>
@@ -34,8 +34,8 @@
     function check () {
         var username =  document.getElementById("username").value;
         var password =  document.getElementById("password").value;
-        if(username == "alwie" && password == "mia") {
-            window.open("https://sangajie.github.io/hello911-web/login.html"); 
+        if(username == "Admin" && password == "Admin") {
+            window.open("https://sangajie.github.io/hello911-web/home.html"); 
         } else {
             alert("Username dan Password Salah")
         }
