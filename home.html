@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    
+    <style>
+        @media(min-height:800px){
+            .menu{
+                position: fixed;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="h-screen flex justify-center">
-        <div class="p-6 w-full max-w-lg">
+        <div class=" w-full max-w-lg">
+            <div class="px-6 pt-10">
             <div class="flex justify-between items-center">
                 <div>
                     <h1 class="font-bold text-xl">Hello, Yosia</h1>
@@ -18,7 +25,6 @@
                 </div>
                 <img src="user.png" class="w-12 rounded p-1 " alt="">
             </div>
-            <div>
                 <!-- Atas -->
                 <div class="flex mt-5 pt-10 font-semibold">
                     <div class="flex text-xs w-1/2 flex-col p-1 rounded-lg">
@@ -66,24 +72,24 @@
                 <div class="flex justify-center items-center flex-col  mt-8">
                     <a href="login.html" class="mt-3 px-7 py-1 hover:border-gray-800 bg-gray-800 hover:text-gray-800 border-2 text-yellow-500 border-yellow-500 hover:bg-yellow-500 text-center font-semibold rounded-lg">LOGOUT</a>
                 </div>
-                <div class="fixed bottom-0 left-0 border-t-2 border-black w-full">
-                    <div class="flex justify-around font-bold" style="font-size: .6rem;">
-                        <div class="flex flex-col items-center py-4">
-                            <img src="tower-cell-solid.svg" class="h-5" alt="">
-                            <p>EMERGENCY</p>
-                        </div>
-                        <div class="flex flex-col items-center py-4">
-                            <img src="scale-balanced-solid.svg" class="h-5" alt="">
-                            <p>BANTUAN</p>
-                        </div>
-                        <a href="konsultasihukum.html" class="flex flex-col items-center py-4 hover:bg-yellow-500 px-2">
-                            <img src="usercall.png" class="h-5" alt="">
-                            <p>KONSULTASI</p>
-                        </a>
-                        <div class="flex flex-col items-center py-4">
-                            <img src="pngwing.com.png" class="h-5" alt="">
-                            <p>SECURITY</p>
-                        </div>
+            </div>
+            <div class="menu bottom-0 left-0 border-t-2 border-black w-full mt-8">
+                <div class="flex justify-around font-bold" style="font-size: .6rem;">
+                    <div class="flex flex-col items-center py-4">
+                        <img src="tower-cell-solid.svg" class="h-5" alt="">
+                        <p>EMERGENCY</p>
+                    </div>
+                    <div class="flex flex-col items-center py-4">
+                        <img src="scale-balanced-solid.svg" class="h-5" alt="">
+                        <p>BANTUAN</p>
+                    </div>
+                    <a href="konsultasihukum.html" class="flex flex-col items-center py-4 hover:bg-yellow-500 px-2">
+                        <img src="usercall.png" class="h-5" alt="">
+                        <p>KONSULTASI</p>
+                    </a>
+                    <div class="flex flex-col items-center py-4">
+                        <img src="pngwing.com.png" class="h-5" alt="">
+                        <p>SECURITY</p>
                     </div>
                 </div>
             </div>
