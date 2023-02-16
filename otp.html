@@ -22,17 +22,17 @@
                             <select id="countries" class="border-2 border-black mr-2 bg-gray-200 px-1 rounded mt-2">
                                 <option selected>+62</option>
                             </select>
-                            <input type="number" class="focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 mr-1 w-36" >
+                            <input type="number" required class="focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 mr-1 w-36" >
                         </div>
                     </div>
                 </div>
                 <div class="flex justify-center">
-                    <input type="text" id="nomer0" placeholder="0" class="text-2xl text-center w-8 focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 mr-1">
-                    <input type="text" id="nomer9" placeholder="9" class="text-2xl text-center w-8 focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 mr-1">
-                    <input type="text" id="nomer1" placeholder="1" class="text-2xl text-center w-8 focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 mr-1">
-                    <input type="text" id="nomer2" placeholder="2" class="text-2xl text-center w-8 focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 mr-1">
-                    <input type="text" id="nomer9" placeholder="9" class="text-2xl text-center w-8 focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 mr-1">
-                    <input type="text" id="nomer7" placeholder="7" class="text-2xl text-center w-8 focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 mr-1">
+                    <input type="text" id="nomer0" maxlength="1" placeholder="0" required class="text-2xl text-center w-8 focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 mr-1">
+                    <input type="text" id="nomer9" maxlength="1" placeholder="9" required class="text-2xl text-center w-8 focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 mr-1">
+                    <input type="text" id="nomer1" maxlength="1" placeholder="1" required class="text-2xl text-center w-8 focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 mr-1">
+                    <input type="text" id="nomer2" maxlength="1" placeholder="2" required class="text-2xl text-center w-8 focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 mr-1">
+                    <input type="text" id="nomer9" maxlength="1" placeholder="9" required class="text-2xl text-center w-8 focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 mr-1">
+                    <input type="text" id="nomer7" maxlength="1" placeholder="7" required class="text-2xl text-center w-8 focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 mr-1">
                 </div>
                 <div class="flex justify-center pt-8 mb-10">
                     <button class="px-7 py-1 hover:border-gray-800 bg-gray-800 hover:text-gray-800 border-2 text-yellow-500 border-yellow-500 hover:bg-yellow-500 font-semibold rounded">CONFIRM</button>
@@ -59,7 +59,7 @@
             window.open("http://127.0.0.1:5500/hello911-web/login.html"); 
             
         } else {
-            alert("salah")
+            alert("")
         }
     }
 </script>

@@ -11,11 +11,11 @@
 <body>
     <div class="h-screen flex justify-center border border-black">
         <div class="p-6 w-full max-w-lg">
-            <div class="flex justify-center pt-5">
+            <div class="flex justify-center pt-20">
                 <img src="Logo.png" class="w-28 border border-yellow-500 rounded p-2" alt="">
             </div>
-            <form onsubmit="return check()" class="flex flex-col">
-                <h1 class="py-8">Welcome!</h1>
+            <form onsubmit="return check()" class="flex flex-col pt-10">
+                <h1 class="py-8 font-bold">Welcome!</h1>
                 <input type="text" id="username" placeholder="Username" class="focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1" required>
                 <input type="text" id="password" placeholder="Password" class="focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 pt-4" required>
 
@@ -37,7 +37,7 @@
         if(username == "alwie" && password == "mia") {
             window.open("http://127.0.0.1:5500/hello911-web/home.html"); 
         } else {
-            alert("salah")
+            alert("Username dan Password Salah")
         }
         // (C1) INIT
 //   var valid = true, error = "", field = "";
