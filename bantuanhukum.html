@@ -6,49 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    
+    <style>
+        @media(min-height:800px){
+            .menu{
+                position: fixed;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="h-screen flex justify-center">
-        <div class="w-full max-w-lg">
-            <div class="bg-black text-white text-center p-1 rounded">
-                    <h1 class="font-bold text-xl">KONSULTASI HUKUM</h1>
+        <div class=" w-full max-w-lg">
+            <div class="bg-black text-white text-center p-1">
+                <h1 class="font-bold text-xl">BANTUAN HUKUM</h1>
             </div>
-            <div class="px-5">
+            <div class="px-6 pt-8">
+                <p class="text-lg italic">Bantuan apa yang anda butuhkan?</p>
                 <!-- Atas -->
-                <div class="mt-5 pt-10 font-bold">
-                    <div class="flex text-xs flex-col rounded-lg">
-                        <p class="italic text-lg mb-4">Pilih masalah hukum yang anda alami :</p>
-                        <p class="border-2 border-gray-900 w-full py-2 text-center drop-shadow-lg rounded-md my-2">PENIPUAN</p>
+                <div class="flex pt-6 font-semibold">
+                    <div class="flex text-xs w-1/2 flex-col p-1 rounded-lg">
+                        <a href="emergency.html">
+                            <div class="shadow-xl border-2 flex flex-col items-center p-2 border-black rounded-lg py-4 hover:bg-yellow-500 cursor-pointer">
+                                <img src="chatbot.png" class="h-12 mb-2" alt="">
+                                <p class="mb-1">CHAT</p>
+                                <p>BOT</p>
+                            </div>
+                        </a>
                     </div>
-                    <div>
-                        <p class="italic text-lg mb-4">Pilih sub-masalah yang anda hadapi :</p>
-                        <div class="flex flex-col">
-                            <div class="flex text-center w-full py-2">
-                                <p class="w-1/2 mr-2 border-2 border-black py-2 rounded-lg bg-zinc-300">PENIPUAN <br> VIA SMS</p>
-                                <p class="w-1/2 border-2 border-black py-2 rounded-lg bg-zinc-300">PENIPUAN <br> ONLINE</p>
+                    <div class="flex text-xs w-1/2 flex-col p-1 rounded-lg">
+                        <a href="bantuanhukum.html">
+                            <div class="shadow-xl border-2 flex flex-col items-center p-2 border-black rounded-lg py-4 hover:bg-yellow-500 cursor-pointer">
+                                <img src="callcenter.png" class="h-12 mb-2" alt="">
+                                <p class="mb-1">CALL</p>
+                                <p>CENTER</p>
                             </div>
-                            <div class="flex text-center w-full py-2">
-                                <p class="w-1/2 mr-2 border-2 border-black py-2 rounded-lg bg-zinc-300">PENIPUAN <br> JUAL BELI</p>
-                                <a href="konsultasihukum-page3.html" class="w-1/2 border-2 border-black py-2 rounded-lg bg-cyan-400 hover:bg-cyan-500">PENIPUAN <br> SKEMA MLM</a>
-                            </div>
-                            <div class="flex text-center w-full py-2">
-                                <p class="w-1/2 mr-2 border-2 border-black py-2 rounded-lg bg-zinc-300">PENIPUAN <br> VIA SMS</p>
-                                <p class="w-1/2 border-2 border-black py-2 rounded-lg bg-zinc-300">PENIPUAN <br> VIA SMS</p>
-                            </div>
-                            <div class="flex text-center w-full py-2">
-                                <p class="w-1/2 mr-2 border-2 border-black py-2 rounded-lg bg-zinc-300">PENIPUAN <br> VIA SMS</p>
-                                <p class="w-1/2 border-2 border-black py-2 rounded-lg bg-zinc-300">PENIPUAN <br> VIA SMS</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex text-xs flex-col rounded-lg">
-                        <a href="konsultasihukum-page2.html" class="border-2 border-gray-900 w-full py-2 text-center drop-shadow-lg rounded-md my-2 hover:bg-cyan-600">PENIPUAN</a>
+                        </a>
                     </div>
                 </div>
-                <!-- <div class="flex justify-center mt-10">
-                    <a href="login.html" class="text-sm border px-2 py-1 rounded bg-yellow-500 border-gray-500 font-semibold">Logout</a>
-                </div> -->
+                <!-- Bawah -->
+                <div class="flex mt-1 font-semibold">
+                    <div class="flex text-xs w-1/2 flex-col p-1 rounded-lg">
+                        <a href="caripengacara.html">
+                            <div class="shadow-xl border-2 flex flex-col items-center p-2 border-black rounded-lg py-4 hover:bg-yellow-500 cursor-pointer">
+                                <img src="lawyer.png" class="h-12 mb-2" alt="">
+                                <p class="mb-1">CARI</p>
+                                <p>PENGACARA</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flex text-xs w-1/2 flex-col p-1 rounded-lg">
+                        <div class="shadow-xl border-2 flex flex-col items-center p-2 border-black rounded-lg py-4 hover:bg-yellow-500 cursor-pointer">
+                            <img src="cops.png" class="h-12 mb-2" alt="">
+                            <p class="mb-1">JASA</p>
+                            <p>PENGAMANAN</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center flex-col  mt-8">
+                    <a href="login.html" class="mt-3 px-7 py-1 hover:border-gray-800 bg-gray-800 hover:text-gray-800 border-2 text-yellow-500 border-yellow-500 hover:bg-yellow-500 text-center font-semibold rounded-lg">KEMBALI</a>
+                </div>
             </div>
         </div>
     </div>
