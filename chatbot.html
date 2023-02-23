@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="chatbot.css">
 </head>
+
 <body>
     <div class="h-screen flex justify-center">
         <div class="w-full max-w-lg">
@@ -18,11 +20,16 @@
             <div id="container" class="container px-5">
                 <div id="chat" class="chat w-full h-5/6">
                     <div id="messages" class="messages bg-gray-100"></div>
-                    <input id="input" class="w-full px-4 py-2 rounded bg-black text-yellow-500" type="text" placeholder="Type a message..." autocomplete="off" autofocus="true" />
+                    <div class="flex border border-black w-full" >
+                        <input id="input" class="w-full px-4 py-2 mr-2 rounded bg-black text-yellow-500" type="text"
+                            placeholder="Type a message..." autocomplete="off" autofocus="true" />
+                            <button onclick="sendMessage()" class="bg-yellow-600">Submit</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
 <script src="chatbot.js"></script>
+
 </html>

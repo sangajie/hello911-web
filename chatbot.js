@@ -66,6 +66,11 @@
         "Try again",
        ];
            const inputField = document.getElementById("input");
+           function sendMessage(){
+            let input = inputField.value;
+            inputField.value = "";
+            output(input);
+        }
        inputField.addEventListener("keydown", (e) => {
          if (e.code === "Enter") {
            let input = inputField.value;
@@ -119,7 +124,7 @@
          let userDiv = document.createElement("div");
          userDiv.id = "user";
          userDiv.className = "user response";
-         userDiv.innerHTML = `<span class="px-3 bg-black text-yellow-500 mr-2 rounded">${input}</span><img src="user.png" class="border-2 w-7 border-black p-1 rounded-full">`;
+         userDiv.innerHTML = `<span>${input}</span><img src="user.png" class="border-2 w-7 border-black p-1 rounded-full">`;
          messagesContainer.appendChild(userDiv);
          
          let botDiv = document.createElement("div");
