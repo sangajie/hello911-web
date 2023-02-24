@@ -6,12 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gold': '#8b734a',
+                        'gold2': '#B09669',
+                        'goldblack': '#32291A',
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body{
+            font-family: 'Tilt Neon', cursive;
+        }
+        @media(min-height:800px){
+            .menu{
+                position: fixed;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="h-screen flex justify-center">
+    <div class="h-screen flex justify-center tracking-wide">
         <div class="w-full max-w-lg">
-            <div class="bg-black text-white text-center p-1 rounded">
+            <div class="bg-gold text-white text-center p-1 rounded">
                     <h1 class="font-bold text-xl">KONSULTASI HUKUM</h1>
             </div>
             <div class="px-10">
@@ -19,15 +44,15 @@
                 <div class="mt-5 pt-10 font-bold">
                     <div class="flex text-xs flex-col rounded-lg">
                         <p class="italic text-lg mb-4">Pilih masalah hukum yang anda alami :</p>
-                        <a href="#" class="border-2 border-gray-900 w-full py-2 text-center bg-zinc-400 text-white drop-shadow-lg rounded-md my-2">PENCURIAN</a>
-                        <a href="konsultasihukum-page2.html" class="border-2 border-gray-900 w-full py-2 text-center bg-cyan-500 text-white drop-shadow-lg rounded-md my-2 hover:bg-cyan-600">PENIPUAN</a>
-                        <a href="#" class="border-2 border-gray-900 w-full py-2 text-center bg-zinc-400 text-white drop-shadow-lg rounded-md my-2">PEMERKOSAAN</a>
-                        <a href="#" class="border-2 border-gray-900 w-full py-2 text-center bg-zinc-400 text-white drop-shadow-lg rounded-md my-2">SENGKETA LAHAN</a>
-                        <a href="#" class="border-2 border-gray-900 w-full py-2 text-center bg-zinc-400 text-white drop-shadow-lg rounded-md my-2">PELAKU KDRT</a>
+                        <a href="#" class="border-gray-900 w-full py-2 text-center bg-goldblack text-white drop-shadow-lg rounded-md my-2">PENCURIAN</a>
+                        <a href="konsultasihukum-page2.html" class="border-gray-900 w-full py-2 text-center bg-gold text-white drop-shadow-lg rounded-md my-2 hover:bg-gold2">PENIPUAN</a>
+                        <a href="#" class="border-gray-900 w-full py-2 text-center bg-goldblack text-white drop-shadow-lg rounded-md my-2">PEMERKOSAAN</a>
+                        <a href="#" class="border-gray-900 w-full py-2 text-center bg-goldblack text-white drop-shadow-lg rounded-md my-2">SENGKETA LAHAN</a>
+                        <a href="#" class="border-gray-900 w-full py-2 text-center bg-goldblack text-white drop-shadow-lg rounded-md my-2">PELAKU KDRT</a>
                     </div>
-                    <div class="flex justify-center items-center flex-col  mt-8">
+                    <!-- <div class="flex justify-center items-center flex-col  mt-8">
                         <a href="home.html" class="mt-3 px-7 py-1 hover:border-gray-800 bg-gray-800 hover:text-gray-800 border-2 text-yellow-500 border-yellow-500 hover:bg-yellow-500 text-center font-semibold rounded-lg">KEMBALI</a>
-                    </div>
+                    </div> -->
                 </div>
                 <!-- <div class="flex justify-center mt-10">
                     <a href="login.html" class="text-sm border px-2 py-1 rounded bg-yellow-500 border-gray-500 font-semibold">Logout</a>

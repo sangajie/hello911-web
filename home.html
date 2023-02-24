@@ -6,7 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gold': '#8b734a',
+                        'gold2': '#B09669',
+                        'goldblack': '#32291A',
+                    },
+                }
+            }
+        }
+    </script>
     <style>
+        body{
+            font-family: 'Tilt Neon', cursive;
+        }
         @media(min-height:800px){
             .menu{
                 position: fixed;
@@ -15,31 +34,31 @@
     </style>
 </head>
 <body>
-    <div class="h-screen flex justify-center">
+    <div class="h-screen flex justify-center tracking-wide">
         <div class=" w-full max-w-lg">
             <div class="px-6 pt-10">
             <div class="flex justify-between items-center">
-                <div>
+                <div class="text-goldblack">
                     <h1 class="font-bold text-xl">Hello, Yosia</h1>
                     <p class="italic">What do you need?</p>
                 </div>
                 <img src="user.png" class="w-12 rounded p-1 " alt="">
             </div>
                 <!-- Atas -->
-                <div class="flex mt-5 pt-10 font-semibold">
-                    <div class="flex text-xs w-1/2 flex-col p-1 rounded-lg">
+                <div class="flex mt-5 pt-10 font-semibold text-white">
+                    <div class="flex text-xs w-1/2 flex-col p-1 rounded-md">
                         <a href="emergency.html">
-                            <div class="shadow-xl border-2 flex flex-col items-center p-2 border-black rounded-lg py-4 hover:bg-yellow-500 cursor-pointer">
-                                <img src="tower-cell-solid.svg" class="h-12 mb-2" alt="">
+                            <div class="shadow-xl border-1 flex flex-col items-center p-2 border-black rounded-md py-4 bg-gold hover:bg-gold2 cursor-pointer">
+                                <img src="emergency.png" class="h-12 mb-2" alt="">
                                 <p class="mb-1">EMERGENCY</p>
                                 <p>CALL 911</p>
                             </div>
                         </a>
                     </div>
-                    <div class="flex text-xs w-1/2 flex-col p-1 rounded-lg">
+                    <div class="flex text-xs w-1/2 flex-col p-1 rounded-md">
                         <a href="bantuanhukum.html">
-                            <div class="shadow-xl border-2 flex flex-col items-center p-2 border-black rounded-lg py-4 hover:bg-yellow-500 cursor-pointer">
-                                <img src="scale.png" class="h-12 mb-2" alt="">
+                            <div class="shadow-xl border-1 flex flex-col items-center p-2 border-black rounded-md py-4 bg-gold hover:bg-gold2 cursor-pointer">
+                                <img src="law.png" class="h-12 mb-2" alt="">
                                 <p class="mb-1">BANTUAN</p>
                                 <p>HUKUM</p>
                             </div>
@@ -47,55 +66,55 @@
                     </div>
                 </div>
                 <!-- Bawah -->
-                <div class="flex mt-1 font-semibold">
-                    <div class="flex text-xs w-1/2 flex-col p-1 rounded-lg">
+                <div class="flex mt-1 font-semibold text-white">
+                    <div class="flex text-xs w-1/2 flex-col p-1 rounded-md">
                         <a href="konsultasihukum.html">
-                            <div class="shadow-xl border-2 flex flex-col items-center p-2 border-black rounded-lg py-4 hover:bg-yellow-500 cursor-pointer">
-                                <img src="konsultasihukum.png" class="h-12 mb-2" alt="">
+                            <div class="shadow-xl border-1 flex flex-col items-center p-2 border-black rounded-md py-4 bg-gold hover:bg-gold2 cursor-pointer">
+                                <img src="communication.png" class="h-12 mb-2" alt="">
                                 <p class="mb-1">KONSULTASI</p>
                                 <p>HUKUM</p>
                             </div>
                         </a>
                     </div>
-                    <div class="flex text-xs w-1/2 flex-col p-1 rounded-lg">
-                        <a href="jasapengamanan.html" class="shadow-xl border-2 flex flex-col items-center p-2 border-black rounded-lg py-4 hover:bg-yellow-500 cursor-pointer">
-                            <img src="pngwing.com.png" class="h-12 mb-2" alt="">
+                    <div class="flex text-xs w-1/2 flex-col p-1 rounded-md">
+                        <a href="jasapengamanan.html" class="shadow-xl border-1 flex flex-col items-center p-2 border-black rounded-md py-4 bg-gold hover:bg-gold2 cursor-pointer">
+                            <img src="shield.png" class="h-12 mb-2" alt="">
                             <p class="mb-1">JASA</p>
                             <p>PENGAMANAN</p>
                         </a>
                     </div>
                 </div>
                 <!-- Bawah -->
-                <div class="flex mt-10">
-                    <div class="flex text-xs w-full flex-col p-1 rounded-lg">
-                        <div class="shadow-xl border-2 flex flex-col text-center text-2xl items-center p-2 border-black rounded-lg py-4">
+                <div class="flex mt-10 text-white font-bold">
+                    <div class="flex text-xs w-full flex-col p-1 rounded-md">
+                        <div class="shadow-xl border-1 flex flex-col text-center text-2xl items-center p-2 border-black rounded-md py-4 bg-gold">
                             <h1>PUT YOUR <br> ADVERTISMENT <br> BANNER HERE</h1>
                         </div>
                     </div>
                 </div>
                 <div class="flex justify-center items-center flex-col  mt-8">
-                    <a href="login.html" class="mt-3 px-7 py-1 hover:border-gray-800 bg-gray-800 hover:text-gray-800 border-2 text-yellow-500 border-yellow-500 hover:bg-yellow-500 text-center font-semibold rounded-lg">LOGOUT</a>
+                    <a href="login.html" class="mt-3 px-7 py-1 bg-gold border-1 text-white border-gold2 hover:bg-gold2 text-center font-semibold rounded">LOGOUT</a>
                 </div>
             </div>
-            <div class="menu bottom-0 left-0 border-t-2 border-black w-full mt-8">
+            <div class="menu bottom-0 left-0 border-t-2 border-goldblack w-full mt-8 bg-gold rounded-t text-white">
                 <div class="flex justify-around font-bold" style="font-size: .6rem;">
-                    <a href="emergency.html" class="flex flex-col items-center py-4 hover:bg-yellow-500 px-2">
+                    <a href="emergency.html" class="flex flex-col items-center py-4 hover:bg-gold2 w-15 rounded-full">
                     <!-- <div class="flex flex-col items-center py-4"> -->
-                        <img src="tower-cell-solid.svg" class="h-5" alt="">
+                        <img src="emergency.png" class="h-5" alt="">
                         <p>EMERGENCY</p>
                     </a>
-                    <a href="bantuanhukum.html" class="flex flex-col items-center py-4 hover:bg-yellow-500 px-2">
+                    <a href="bantuanhukum.html" class="flex flex-col items-center py-4 hover:bg-gold2 w-15 rounded-full">
                     <!-- <div class="flex flex-col items-center py-4"> -->
-                        <img src="scale.png" class="h-5" alt="">
+                        <img src="law.png" class="h-5" alt="">
                         <p>BANTUAN</p>
                     </a>
-                    <a href="konsultasihukum.html" class="flex flex-col items-center py-4 hover:bg-yellow-500 px-2">
-                        <img src="usercall.png" class="h-5" alt="">
+                    <a href="konsultasihukum.html" class="flex flex-col items-center py-4 hover:bg-gold2 w-15 rounded-full">
+                        <img src="communication.png" class="h-5" alt="">
                         <p>KONSULTASI</p>
                     </a>
-                    <a href="jasapengamanan.html" class="flex flex-col items-center py-4 hover:bg-yellow-500 px-2">
+                    <a href="jasapengamanan.html" class="flex flex-col items-center py-4 hover:bg-gold2 w-15 rounded-full">
                     <!-- <div class="flex flex-col items-center py-4"> -->
-                        <img src="pngwing.com.png" class="h-5" alt="">
+                        <img src="shield.png" class="h-5" alt="">
                         <p>SECURITY</p>
                     </a>
                 </div>
