@@ -37,13 +37,25 @@
     <div class="h-screen flex justify-center tracking-wide">
         <div class=" w-full max-w-lg">
             <div class="px-6 pt-10">
-            <div class="flex justify-between items-center">
-                <div class="text-goldblack">
-                    <h1 class="font-bold text-xl">Hello, Yosia</h1>
-                    <p class="italic">What do you need?</p>
+                <div class="flex justify-between items-center">
+                    <div class="text-goldblack">
+                        <h1 class="font-bold text-xl">Hello, Yosia</h1>
+                        <p class="italic">What do you need?</p>
+                    </div>
+                    <script src="//unpkg.com/alpinejs" defer></script>
+                    
+                    <div x-data="{open: false}">
+                        <div class="flex justify-center">
+                            <button class="" x-on:click="open = !open"><img src="user.png" class="rounded p-1 " alt=""></button>
+                        </div>
+                        <div class="relative bg-white" x-show="open">
+                            <div class="flex justify-center items-center flex-col">
+                                <a href="login.html" class="px-2 py-1 bg-gold border-1 text-white border-gold2 hover:bg-gold2 text-center font-semibold rounded">LOGOUT</a>
+                            </div>
+                        </div>
+                        <div></div>
+                    </div>
                 </div>
-                <img src="user.png" class="w-12 rounded p-1 " alt="">
-            </div>
                 <!-- Atas -->
                 <div class="flex mt-5 pt-10 font-semibold text-white">
                     <div class="flex text-xs w-1/2 flex-col p-1 rounded-md">
@@ -99,27 +111,27 @@
             <div class="menu bottom-0 left-0 border-t-2 border-goldblack w-full mt-8 bg-gold rounded-t text-white">
                 <div class="flex justify-around font-bold" style="font-size: .6rem;">
                     <a href="emergency.html" class="flex flex-col items-center py-4 hover:bg-gold2 w-15 rounded-full">
-                    <!-- <div class="flex flex-col items-center py-4"> -->
-                        <img src="emergency.png" class="h-5" alt="">
-                        <p>EMERGENCY</p>
-                    </a>
-                    <a href="bantuanhukum.html" class="flex flex-col items-center py-4 hover:bg-gold2 w-15 rounded-full">
-                    <!-- <div class="flex flex-col items-center py-4"> -->
-                        <img src="law.png" class="h-5" alt="">
-                        <p>BANTUAN</p>
-                    </a>
-                    <a href="konsultasihukum.html" class="flex flex-col items-center py-4 hover:bg-gold2 w-15 rounded-full">
-                        <img src="communication.png" class="h-5" alt="">
-                        <p>KONSULTASI</p>
-                    </a>
-                    <a href="jasapengamanan.html" class="flex flex-col items-center py-4 hover:bg-gold2 w-15 rounded-full">
-                    <!-- <div class="flex flex-col items-center py-4"> -->
-                        <img src="shield.png" class="h-5" alt="">
-                        <p>SECURITY</p>
-                    </a>
+                        <!-- <div class="flex flex-col items-center py-4"> -->
+                            <img src="emergency.png" class="h-5" alt="">
+                            <p>EMERGENCY</p>
+                        </a>
+                        <a href="bantuanhukum.html" class="flex flex-col items-center py-4 hover:bg-gold2 w-15 rounded-full">
+                            <!-- <div class="flex flex-col items-center py-4"> -->
+                                <img src="law.png" class="h-5" alt="">
+                                <p>BANTUAN</p>
+                            </a>
+                            <a href="konsultasihukum.html" class="flex flex-col items-center py-4 hover:bg-gold2 w-15 rounded-full">
+                                <img src="communication.png" class="h-5" alt="">
+                                <p>KONSULTASI</p>
+                            </a>
+                            <a href="jasapengamanan.html" class="flex flex-col items-center py-4 hover:bg-gold2 w-15 rounded-full">
+                                <!-- <div class="flex flex-col items-center py-4"> -->
+                                    <img src="shield.png" class="h-5" alt="">
+                                    <p>SECURITY</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+            </body>
+            </html>

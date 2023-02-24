@@ -1,6 +1,7 @@
     // input options
     const utterances = [
  
+        ["alwie"],
         ["how are you", "how is life", "how are things"],
         ["hi", "hey", "hello", "good morning", "good afternoon"],
         ["what are you doing", "what is going on", "what is up"],
@@ -29,6 +30,9 @@
        // Possible responses corresponding to triggers
        
        const answers = [
+         [
+          "Mia"
+        ],
          [
           "Fine... how are you?",
           "Pretty well, how are you?",
@@ -124,7 +128,7 @@
          let userDiv = document.createElement("div");
          userDiv.id = "user";
          userDiv.className = "user response";
-         userDiv.innerHTML = `<span>${input}</span><img src="user.png" class="border-2 w-7 border-black p-1 rounded-full">`;
+         userDiv.innerHTML = `<span>${input}</span><img src="user.png" class="border-2 w-7 border-goldblack p-1 rounded-full">`;
          messagesContainer.appendChild(userDiv);
          
          let botDiv = document.createElement("div");
@@ -132,7 +136,7 @@
          botDiv.id = "bot";
          botDiv.className = "bot response";
          botText.innerText = 'Typing...';
-         botDiv.innerHTML = `<img src="user.png" class="border-2 w-7 border-black p-1 rounded-full">`;
+         botDiv.innerHTML = `<img src="user.png" class="border-2 w-7 border-goldblack p-1 rounded-full">`;
          botDiv.appendChild(botText);
          messagesContainer.appendChild(botDiv);
        
