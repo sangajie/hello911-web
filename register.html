@@ -6,7 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gold': '#8b734a',
+                        'gold2': '#B09669',
+                        'goldblack': '#32291A',
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body{
+            font-family: 'Tilt Neon', cursive;
+        }
+        @media(min-height:800px) {
+            .menu {
+                position: fixed;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="h-screen flex justify-center border border-black overflow-auto">
@@ -38,8 +63,7 @@
                     </div>
                 </div>
                 <div class="flex justify-center pt-8 mb-10">
-                    <!-- <button type="submit" class="px-7 py-1 hover:border-gray-800 bg-gray-800 hover:text-gray-800 border-2 text-yellow-500 border-yellow-500 hover:bg-yellow-500 font-semibold rounded">REGISTER</button> -->
-                    <a href="otp.html" class="px-7 py-1 hover:border-gray-800 bg-gray-800 hover:text-gray-800 border-2 text-yellow-500 border-yellow-500 hover:bg-yellow-500 font-semibold rounded">REGISTER</a>
+                    <a href="otp.html" class="px-7 py-1 bg-gold text-white hover:bg-gold2 font-semibold rounded">REGISTER</a>
                 </div>
             </form>
         </div>
