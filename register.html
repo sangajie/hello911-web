@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,9 +24,10 @@
         }
     </script>
     <style>
-        body{
+        body {
             font-family: 'Tilt Neon', cursive;
         }
+
         @media(min-height:800px) {
             .menu {
                 position: fixed;
@@ -33,28 +35,35 @@
         }
     </style>
 </head>
+
 <body>
     <div class="h-screen flex justify-center border border-black overflow-auto">
         <div class="p-6 w-full max-w-lg p">
             <div class="flex justify-center pt-5">
-                <img src="Logo.png" class="w-28 rounded p-2" alt="">
+                <img src="Logo.png" class="w-32 rounded p-2" alt="">
             </div>
             <form action="" class="flex flex-col">
-                <h1 class="py-8 font-semibold text-xl">Create Account !</h1>
-                <input type="text" placeholder="Fullname" class="w-full focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1" required>
-                <input type="text" placeholder="Username" class="w-full focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 pt-4" required>
-                <input type="text" placeholder="Email" class="w-full focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 pt-4" required>
-                <input type="number" placeholder="Phone Number" class="w-full focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 pt-4" required>
-                <!-- <input type="date" placeholder="DOB" class="w-full focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 pt-4" required> -->
-                <input
-  placeholder="Date Of Birth"
-  class="w-full focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 pt-4"
-  type="text"
-  onfocus="(this.type='date')"
-  id="date" />
-                <input type="password" placeholder="Password" class="w-full focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 pt-4" required>
-                <input type="password" placeholder="Re-Enter Password" class="w-full focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 pt-4" required>
-                
+                <h1 class="py-4 font-semibold text-xl">Create Account !</h1>
+                <input type="text" placeholder="Fullname"
+                    class="w-full focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1" required>
+                <input type="text" placeholder="Username"
+                    class="w-full focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 pt-4"
+                    required>
+                <input type="text" placeholder="Email"
+                    class="w-full focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 pt-4"
+                    required>
+                <input type="number" placeholder="Phone Number"
+                    class="w-full focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 pt-4"
+                    required>
+                <input placeholder="Date Of Birth"
+                    class="w-full focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 pt-4"
+                    type="text" onfocus="(this.type='date')" id="date" />
+                <input type="password" placeholder="Password"
+                    class="w-full focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 pt-4"
+                    required>
+                <input type="password" placeholder="Re-Enter Password"
+                    class="w-full focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 pt-4"
+                    required>
                 <div class="flex flex-col text-gray-500 mt-8" style="font-size: .6rem;">
                     <div class="italic">
                         <p>*By clicking Register, You are agreed to our</p>
@@ -63,10 +72,12 @@
                     </div>
                 </div>
                 <div class="flex justify-center pt-8 mb-10">
-                    <a href="otp.html" class="px-7 py-1 bg-gold text-white hover:bg-gold2 font-semibold rounded">REGISTER</a>
+                    <a href="otp.html"
+                        class="px-7 py-1 bg-gold text-white hover:bg-gold2 font-semibold rounded">REGISTER</a>
                 </div>
             </form>
         </div>
     </div>
 </body>
+
 </html>

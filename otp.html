@@ -6,13 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gold': '#8b734a',
+                        'gold2': '#B09669',
+                        'goldblack': '#32291A',
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body{
+            font-family: 'Tilt Neon', cursive;
+        }
+        @media(min-height:800px){
+            .menu{
+                position: fixed;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="h-screen flex justify-center border border-black overflow-auto">
         <div class="p-6 w-full max-w-lg p">
             <div class="flex justify-center pt-5">
-                <img src="Logo.png" class="w-28 border border-yellow-500 rounded p-2" alt="">
+                <img src="Logo.png" class="w-28 rounded p-2" alt="">
             </div>
             <form onsubmit="return check()" class="flex flex-col">
                 <div class="flex justify-center">
@@ -35,8 +60,7 @@
                     <input type="number" id="nomer7" onKeyPress="if(this.value.length==1) return false;" placeholder="7" required class="text-2xl text-center w-8 focus:outline-none focus:border-yellow-500 border-b-2 border-black pb-1 mr-1">
                 </div>
                 <div class="flex justify-center pt-8 mb-10">
-                    <button class="px-7 py-1 hover:border-gray-800 bg-gray-800 hover:text-gray-800 border-2 text-yellow-500 border-yellow-500 hover:bg-yellow-500 font-semibold rounded">CONFIRM</button>
-                    
+                    <button class="px-7 py-1 bg-gold text-white hover:bg-gold2 font-semibold rounded">CONFIRM</button>
                 </div>
             </form>
         </div>
